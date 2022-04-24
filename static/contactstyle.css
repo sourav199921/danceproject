@@ -1,0 +1,42 @@
+*{
+  margin:0; 
+  padding:0 ;                 
+}
+
+section#container
+{
+   height:80vh ;  
+   display: flex;  
+   flex-direction: column;
+   /* justify-content: center; */
+   align-items: center;
+   
+
+}
+
+input,textarea{
+     width: 50vw;
+     padding:2px 8px ; 
+     margin:12px 2px ;              
+}
+
+h2{
+ padding:2px 2px ;
+ margin: 2px 8px;
+ font-weight: bold;
+}
+
+button{
+    padding: 2px 2px;  
+    margin: 2px 2px;      
+    border-radius: 12px;  
+    font-weight: bold;  
+    text-align: center;    
+}
+
+form{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+}

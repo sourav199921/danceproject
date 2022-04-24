@@ -1,0 +1,31 @@
+extends base.pug
+
+block scripts
+     script(src='/static/index.js')
+
+     style
+       include ../static/style.css
+       include ../static/aboutstyle.css
+
+block content 
+    nav#navbar
+      ul
+        div#logo 
+          img(src="/static/logo.png")
+          |HDA
+        li #[a(href="/") home]
+        li #[a(href="/about") about]
+        li #[a(href="/service") services]
+        li #[a(href="/class") class info]
+        li #[a(href="/contact") contacts us]
+    section#about 
+       section#aboutheading 
+          h2 About us 
+       section#aboutpara 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quasi beatae, quod debitis nulla odio, repudiandae corrupti labore corporis similique ducimus accusantium ad hic alias qui expedita veritatis itaque! Quod error iure obcaecati saepe odit, aliquid facere culpa tempore corporis suscipit quae repellendus nemo reprehenderit, nulla mollitia molestias nesciunt dicta! Cupiditate iure sunt qui quis quas laborum magni aut? Similique doloremque illum sequi suscipit dolores qui, commodi molestias necessitatibus maiores, quo repellat dignissimos et velit fuga doloribus mollitia cumque quod at deserunt dolorum perspiciatis, libero accusantium sapiente. Repellat, dignissimos harum. Vitae corrupti quidem delectus harum autem impedit, porro est ipsum!
+       
+
+block foot
+    footer#footer 
+        |copyright &#169 2022 skd.com | All rights reserved                                 
+    

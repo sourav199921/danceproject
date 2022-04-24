@@ -1,0 +1,26 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style  
+    style
+        include ../static/style.css
+        include ../static/classstyle.css
+block content
+    nav#navbar
+      ul
+        div#logo 
+          img(src="/static/logo.png")
+          |HDA
+        li #[a(href="/") home]
+        li #[a(href="/about") about]
+        li #[a(href="/service") services]
+        li #[a(href="/class") class info]
+        li #[a(href="/contact") contacts us]
+    section#class
+        img(src="../static/timetable.jpg", alt="", srcset="")
+
+block foot
+    footer#footer 
+        |copyright &#169 2022 skd.com | All rights reserved  

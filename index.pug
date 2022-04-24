@@ -1,0 +1,64 @@
+//- index.pug
+doctype html
+html
+  title Sourav Dance Academy
+  head
+    style
+      include ../static/style.css
+
+  body
+    nav#navbar
+      ul
+        div#logo 
+          img(src="/static/logo.png")
+          |HDA
+        li #[a(href="/") home]
+        li #[a(href="/") about]
+        li #[a(href="/") services]
+        li #[a(href="/") class info]
+        li #[a(href="/") contacts us]
+    section#intro_section 
+          div Welcome to Sourav Dance Academy
+          div.star Rising Dancing Stars 
+    section#mission_section 
+        h2 Our Mission
+           section#mission_section_card_collection 
+              div.card 
+                h3 Dance Perfection
+                div.image 
+                     img(src="/static/1.png")
+                P This is the best dance academy of the universe
+    
+              div.card 
+                h3 Dance like Rising star
+                div.image 
+                     img(src="/static/2.png")
+                P This is the best dance academy of the universe     
+              div.card 
+                h3 Dance Expert
+                div.image 
+                     img(src="/static/3.png")
+                P This is the best dance academy of the universe
+    section#sponsor_section
+        h3 Our Sponsors
+           section#sponsors_collection_image 
+              div.im
+                 img(src="/static/sponsor/logo1.png")
+              div.im
+                 img(src="/static/sponsor/logo2.png")
+              div.im
+                 img(src="/static/sponsor/logo3.png")
+              div.im
+                 img(src="/static/sponsor/logo4.png") 
+    
+    footer#footer 
+        |copyright &#169 2022 skd.com | All rights reserved                                                                  
+    
+
+  script
+    include ../static/index.js      
+       
+                    
+       
+    
+  
